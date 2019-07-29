@@ -95,23 +95,8 @@ public class AccountService {
     	}
 	}
 
-	public static String maskAcctNumber(String number) {
-        int index = 0;
-        StringBuilder masked = new StringBuilder();
-        String mask = "xxxxxxxx####";
-        for (int i = 0; i < mask.length(); i++) {
-           char c = mask.charAt(i);
-           if (c == '#') {
-              masked.append(number.charAt(index));
-              index++;
-           } else if (c == 'x') {
-              masked.append(c);
-              index++;
-           } else {
-              masked.append(c);
-           }
-        }
-        return masked.toString();
-     }
+	private static String maskAcctNumber(String number) {
+           return "xxxxxxxx"+number.substring(8);
+     	}
 
 }
