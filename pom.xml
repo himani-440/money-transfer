@@ -70,7 +70,7 @@
 		</dependency>
 	</dependencies>
 
-<!-- for code generation time only
+
 	<build>
 	<plugins>
 		<plugin>
@@ -121,6 +121,7 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+		<!-- for code generation time only
 			<plugin>
 				<groupId>org.jooq</groupId>
 				<artifactId>jooq-codegen-maven</artifactId>
@@ -148,7 +149,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin> 
+			</plugin> -->
 		</plugins> 
-	</build> -->
+	</build> 
 </project>
